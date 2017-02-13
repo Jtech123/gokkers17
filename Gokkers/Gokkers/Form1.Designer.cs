@@ -30,11 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.Background = new System.Windows.Forms.PictureBox();
-            this.entity3 = new System.Windows.Forms.PictureBox();
-            this.entity2 = new System.Windows.Forms.PictureBox();
-            this.entity4 = new System.Windows.Forms.PictureBox();
-            this.entity1 = new System.Windows.Forms.PictureBox();
             this.betOffice = new System.Windows.Forms.GroupBox();
             this.goBtn = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -50,77 +45,27 @@
             this.betBtn = new System.Windows.Forms.Button();
             this.betAmount = new System.Windows.Forms.NumericUpDown();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.Background)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity1)).BeginInit();
+            this.winningLabel = new System.Windows.Forms.Label();
+            this.entity1 = new System.Windows.Forms.PictureBox();
+            this.entity4 = new System.Windows.Forms.PictureBox();
+            this.entity2 = new System.Windows.Forms.PictureBox();
+            this.entity3 = new System.Windows.Forms.PictureBox();
+            this.Background = new System.Windows.Forms.PictureBox();
             this.betOffice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Background)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Background
-            // 
-            this.Background.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Background.BackgroundImage = global::Gokkers.Properties.Resources.PictureBox1;
-            this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Background.Location = new System.Drawing.Point(1, -1);
-            this.Background.Name = "Background";
-            this.Background.Size = new System.Drawing.Size(904, 343);
-            this.Background.TabIndex = 0;
-            this.Background.TabStop = false;
-            // 
-            // entity3
-            // 
-            this.entity3.BackColor = System.Drawing.Color.Transparent;
-            this.entity3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity3.BackgroundImage")));
-            this.entity3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity3.Location = new System.Drawing.Point(23, 194);
-            this.entity3.Name = "entity3";
-            this.entity3.Size = new System.Drawing.Size(100, 35);
-            this.entity3.TabIndex = 1;
-            this.entity3.TabStop = false;
-            // 
-            // entity2
-            // 
-            this.entity2.BackColor = System.Drawing.Color.Transparent;
-            this.entity2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity2.BackgroundImage")));
-            this.entity2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity2.Location = new System.Drawing.Point(23, 95);
-            this.entity2.Name = "entity2";
-            this.entity2.Size = new System.Drawing.Size(100, 35);
-            this.entity2.TabIndex = 2;
-            this.entity2.TabStop = false;
-            // 
-            // entity4
-            // 
-            this.entity4.BackColor = System.Drawing.Color.Transparent;
-            this.entity4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity4.BackgroundImage")));
-            this.entity4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity4.Location = new System.Drawing.Point(23, 287);
-            this.entity4.Name = "entity4";
-            this.entity4.Size = new System.Drawing.Size(100, 35);
-            this.entity4.TabIndex = 3;
-            this.entity4.TabStop = false;
-            // 
-            // entity1
-            // 
-            this.entity1.BackColor = System.Drawing.Color.Transparent;
-            this.entity1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity1.BackgroundImage")));
-            this.entity1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity1.Location = new System.Drawing.Point(23, 12);
-            this.entity1.Name = "entity1";
-            this.entity1.Size = new System.Drawing.Size(100, 35);
-            this.entity1.TabIndex = 4;
-            this.entity1.TabStop = false;
             // 
             // betOffice
             // 
             this.betOffice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.betOffice.Controls.Add(this.winningLabel);
             this.betOffice.Controls.Add(this.goBtn);
             this.betOffice.Controls.Add(this.textBox2);
             this.betOffice.Controls.Add(this.textBox3);
@@ -150,6 +95,7 @@
             this.goBtn.TabIndex = 3;
             this.goBtn.Text = "Go";
             this.goBtn.UseVisualStyleBackColor = true;
+            this.goBtn.Click += new System.EventHandler(this.goBtn_Click);
             // 
             // textBox2
             // 
@@ -296,9 +242,76 @@
             // 
             // timer1
             // 
-            this.timer1.Enabled = true;
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // winningLabel
+            // 
+            this.winningLabel.AutoSize = true;
+            this.winningLabel.Location = new System.Drawing.Point(377, 18);
+            this.winningLabel.Name = "winningLabel";
+            this.winningLabel.Size = new System.Drawing.Size(39, 17);
+            this.winningLabel.TabIndex = 6;
+            this.winningLabel.Text = "Wins";
+            this.winningLabel.Visible = false;
+            // 
+            // entity1
+            // 
+            this.entity1.BackColor = System.Drawing.Color.Transparent;
+            this.entity1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity1.BackgroundImage")));
+            this.entity1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity1.Location = new System.Drawing.Point(23, 12);
+            this.entity1.Name = "entity1";
+            this.entity1.Size = new System.Drawing.Size(100, 35);
+            this.entity1.TabIndex = 4;
+            this.entity1.TabStop = false;
+            // 
+            // entity4
+            // 
+            this.entity4.BackColor = System.Drawing.Color.Transparent;
+            this.entity4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity4.BackgroundImage")));
+            this.entity4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity4.Location = new System.Drawing.Point(23, 287);
+            this.entity4.Name = "entity4";
+            this.entity4.Size = new System.Drawing.Size(100, 35);
+            this.entity4.TabIndex = 3;
+            this.entity4.TabStop = false;
+            // 
+            // entity2
+            // 
+            this.entity2.BackColor = System.Drawing.Color.Transparent;
+            this.entity2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity2.BackgroundImage")));
+            this.entity2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity2.Location = new System.Drawing.Point(23, 95);
+            this.entity2.Name = "entity2";
+            this.entity2.Size = new System.Drawing.Size(100, 35);
+            this.entity2.TabIndex = 2;
+            this.entity2.TabStop = false;
+            // 
+            // entity3
+            // 
+            this.entity3.BackColor = System.Drawing.Color.Transparent;
+            this.entity3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity3.Image = global::Gokkers.Properties.Resources.Dog;
+            this.entity3.Location = new System.Drawing.Point(23, 197);
+            this.entity3.Name = "entity3";
+            this.entity3.Size = new System.Drawing.Size(100, 35);
+            this.entity3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.entity3.TabIndex = 1;
+            this.entity3.TabStop = false;
+            // 
+            // Background
+            // 
+            this.Background.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Background.BackgroundImage = global::Gokkers.Properties.Resources.PictureBox1;
+            this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Background.Location = new System.Drawing.Point(1, -1);
+            this.Background.Name = "Background";
+            this.Background.Size = new System.Drawing.Size(904, 343);
+            this.Background.TabIndex = 0;
+            this.Background.TabStop = false;
             // 
             // Form1
             // 
@@ -315,15 +328,15 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.Background)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity1)).EndInit();
             this.betOffice.ResumeLayout(false);
             this.betOffice.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Background)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,6 +363,7 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label winningLabel;
     }
 }
 

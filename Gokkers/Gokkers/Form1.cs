@@ -45,15 +45,31 @@ namespace Gokkers
             //Greyhound contestant2 = new Greyhound(781, entity2);
             //Greyhound contestant3 = new Greyhound(781, entity3);
             //Greyhound contestant4 = new Greyhound(781, entity4);
-            timer1.Enabled = true;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             foreach (var item in contestants)
             {
-                Thread.Sleep(5);
-                item.Run();
+                bool result = item.Run(winningLabel);
+                if (result)
+                {
+                    timer1.Stop();
+                    break;
+                }
+                else
+                {
+                    item.Run(winningLabel);
+                }
+            }
+        }
+
+        private void goBtn_Click(object sender, EventArgs e)
+        {
+            timer1.Start();
+            foreach (var item in contestants)
+            {
+                item.TakeStartingPosition();
             }
         }
     }
