@@ -36,7 +36,6 @@ namespace Gokkers
             else {
                 winner.Text = MyPictureBox.Name + " Wins";
                 winner.Visible = true;
-
                 return true;
             }
 
@@ -55,6 +54,11 @@ namespace Gokkers
         public int GetPosX()
         {
             return MyPictureBox.Location.X;
+        }
+
+        public void RemoveLast(Fish[] fish)
+        {
+            fish.
         }
     }
 }
