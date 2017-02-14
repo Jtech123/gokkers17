@@ -14,11 +14,13 @@ namespace Gokkers
         private decimal cash;
         private decimal betValue;
         private decimal target;
+        private RadioButton playerItem;
 
-        public Guy(string name)
+        public Guy(string name, RadioButton playerItem)
         {
             this.cash = 100;
             this.name = name;
+            this.playerItem = playerItem;
         }
 
         public bool Bet(decimal value)
@@ -69,6 +71,11 @@ namespace Gokkers
             messageBoxes[1].Text = messageBoxes[0].Text;
             Thread.Sleep(10);
             messageBoxes[0].Text = this.name + " won the bet of " + this.betValue + " on " + this.target;
+        }
+
+        public void SetBoxText()
+        {
+            this.playerItem.Text = this.playerItem.Name + " " + this.cash;
         }
 
         public void SetBetValue(decimal betValue)

@@ -33,7 +33,7 @@ namespace Gokkers
         {
             for (int i = 0; i < players.Length; i++)
             {
-                players[i] = new Guy(playerBoxes[i].Text);
+                players[i] = new Guy(playerBoxes[i].Text, playerBoxes[i]);
             }
         }
         public Form1()
@@ -71,6 +71,10 @@ namespace Gokkers
                 else
                 {
                     item.Run(winningLabel);
+                    foreach(var player in players)
+                    {
+                        player.SetBoxText();
+                    }
                 }
             }
         }
