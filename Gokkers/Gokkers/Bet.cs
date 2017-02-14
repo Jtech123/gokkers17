@@ -9,7 +9,7 @@ namespace Gokkers
 {
     class Bet
     {
-        public void CheckWinner(Guy[] players, Greyhound[] entitys, Label betting, TextBox[] messageBoxes)
+        public void CheckWinner(Guy[] players, Fish[] entitys, Label betting, TextBox[] messageBoxes)
         {
             foreach(var player in players)
             {

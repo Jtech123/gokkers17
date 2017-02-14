@@ -204,9 +204,9 @@
             this.messageLbl.AutoSize = true;
             this.messageLbl.Location = new System.Drawing.Point(196, 174);
             this.messageLbl.Name = "messageLbl";
-            this.messageLbl.Size = new System.Drawing.Size(141, 17);
+            this.messageLbl.Size = new System.Drawing.Size(139, 17);
             this.messageLbl.TabIndex = 1;
-            this.messageLbl.Text = "euro on dog number:";
+            this.messageLbl.Text = "euro on fish number:";
             // 
             // targetNumbers
             // 
@@ -414,9 +414,10 @@
             this.Controls.Add(this.entity3);
             this.Controls.Add(this.Background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Fishy Thingy";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.betOffice.ResumeLayout(false);
             this.betOffice.PerformLayout();

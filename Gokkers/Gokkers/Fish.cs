@@ -8,16 +8,16 @@ using System.Windows.Forms;
 
 namespace Gokkers
 {
-    class Greyhound
+    class Fish
     {
         public static Random Randomizer = new Random();
         public int RaceTrackLength;
         public PictureBox MyPictureBox;
         private string name;
-        
+
         private int distance;
-        
-        public Greyhound(int RaceTrackLength, PictureBox MyPictureBox, string name)
+
+        public Fish(int RaceTrackLength, PictureBox MyPictureBox, string name)
         {
             this.RaceTrackLength = RaceTrackLength;
             this.MyPictureBox = MyPictureBox;
@@ -28,15 +28,15 @@ namespace Gokkers
         {
             if (this.MyPictureBox.Location.X < RaceTrackLength)
             {
-                
+
                 distance = Randomizer.Next(1, 70);
-                this.MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + (distance / 20), this.MyPictureBox.Location.Y);
+                this.MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + (distance / 10), this.MyPictureBox.Location.Y);
                 return false;
             }
             else {
                 winner.Text = MyPictureBox.Name + " Wins";
                 winner.Visible = true;
-                
+
                 return true;
             }
 

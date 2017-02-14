@@ -14,7 +14,7 @@ namespace Gokkers
 {
     public partial class Form1 : Form
     {
-        Greyhound[] contestants = new Greyhound[9];
+        Fish[] contestants = new Fish[9];
         PictureBox[] entitys = new PictureBox[9];
         RadioButton[] playerBoxes = new RadioButton[3];
         TextBox[] messageBoxes = new TextBox[3];
@@ -25,7 +25,7 @@ namespace Gokkers
         {
             for (int i = 0; i < contestants.Length; i++)
             {
-                contestants[i] = new Greyhound(850, entitys[i], entitys[i].Name);
+                contestants[i] = new Fish(850, entitys[i], entitys[i].Name);
                 entitys[i].BackColor = Color.Transparent;
             }
         }
@@ -77,6 +77,9 @@ namespace Gokkers
                 if (result)
                 {
                     bet.CheckWinner(players, contestants, betLabel, messageBoxes);
+                    player1.Enabled = true;
+                    player2.Enabled = true;
+                    player3.Enabled = true;
                     timer1.Stop();
                     break;
                 }
@@ -94,6 +97,13 @@ namespace Gokkers
             {
                 item.TakeStartingPosition();
             }
+            player1.Enabled = false;
+            player1.Checked = false;
+            player2.Enabled = false;
+            player2.Checked = false;
+            player3.Enabled = false;
+            player3.Checked = false;
+
         }
 
         private void betBtn_Click(object sender, EventArgs e)
@@ -107,6 +117,8 @@ namespace Gokkers
                     players[0].ActivateBet(betValue, targetNumbers.Value);
                     players[0].UpdateMessage(messageBoxes);
                 }
+                player1.Enabled = false;
+                player1.Checked = false;
             }
             else if (player2.Checked)
             {
@@ -115,6 +127,8 @@ namespace Gokkers
                     players[1].ActivateBet(betValue, targetNumbers.Value);
                     players[1].UpdateMessage(messageBoxes);
                 }
+                player2.Enabled = false;
+                player2.Checked = false;
             }
             else if (player3.Checked)
             {
@@ -123,6 +137,8 @@ namespace Gokkers
                     players[2].ActivateBet(betValue, targetNumbers.Value);
                     players[2].UpdateMessage(messageBoxes);
                 }
+                player3.Enabled = false;
+                player3.Checked = false;
             }
         }
 
