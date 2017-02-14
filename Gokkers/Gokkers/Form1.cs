@@ -15,10 +15,6 @@ namespace Gokkers
     public partial class Form1 : Form
     {
         Greyhound[] contestants = new Greyhound[4];
-        //Greyhound contestant1;
-        //Greyhound contestant2;
-        //Greyhound contestant3;
-        //Greyhound contestant4;
         PictureBox[] entitys = new PictureBox[4];
         
         public void CreateEntity()
@@ -41,10 +37,6 @@ namespace Gokkers
             entitys[2] = entity3;
             entitys[3] = entity4;
             CreateEntity();
-            //Greyhound contestant1 = new Greyhound(781, entity1);
-            //Greyhound contestant2 = new Greyhound(781, entity2);
-            //Greyhound contestant3 = new Greyhound(781, entity3);
-            //Greyhound contestant4 = new Greyhound(781, entity4);
         }
 
         private void timer1_Tick(object sender, EventArgs e)
