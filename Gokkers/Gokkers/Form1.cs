@@ -64,5 +64,15 @@ namespace Gokkers
                 item.TakeStartingPosition();
             }
         }
+
+        private void betBtn_Click(object sender, EventArgs e)
+        {
+            decimal betValue;
+            string betSource;
+            string betTarget;
+            
+            betValue = betAmount.Value;
+
+        }
     }
 }

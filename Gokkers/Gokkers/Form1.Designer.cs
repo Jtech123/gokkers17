@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.betOffice = new System.Windows.Forms.GroupBox();
+            this.winningLabel = new System.Windows.Forms.Label();
             this.goBtn = new System.Windows.Forms.Button();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -45,7 +46,6 @@
             this.betBtn = new System.Windows.Forms.Button();
             this.betAmount = new System.Windows.Forms.NumericUpDown();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.winningLabel = new System.Windows.Forms.Label();
             this.entity1 = new System.Windows.Forms.PictureBox();
             this.entity4 = new System.Windows.Forms.PictureBox();
             this.entity2 = new System.Windows.Forms.PictureBox();
@@ -85,6 +85,16 @@
             this.betOffice.TabIndex = 5;
             this.betOffice.TabStop = false;
             this.betOffice.Text = "Bet office";
+            // 
+            // winningLabel
+            // 
+            this.winningLabel.AutoSize = true;
+            this.winningLabel.Location = new System.Drawing.Point(377, 18);
+            this.winningLabel.Name = "winningLabel";
+            this.winningLabel.Size = new System.Drawing.Size(39, 17);
+            this.winningLabel.TabIndex = 6;
+            this.winningLabel.Text = "Wins";
+            this.winningLabel.Visible = false;
             // 
             // goBtn
             // 
@@ -217,6 +227,7 @@
             this.betBtn.TabIndex = 2;
             this.betBtn.Text = "Bet";
             this.betBtn.UseVisualStyleBackColor = true;
+            this.betBtn.Click += new System.EventHandler(this.betBtn_Click);
             // 
             // betAmount
             // 
@@ -244,16 +255,6 @@
             // 
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // winningLabel
-            // 
-            this.winningLabel.AutoSize = true;
-            this.winningLabel.Location = new System.Drawing.Point(377, 18);
-            this.winningLabel.Name = "winningLabel";
-            this.winningLabel.Size = new System.Drawing.Size(39, 17);
-            this.winningLabel.TabIndex = 6;
-            this.winningLabel.Text = "Wins";
-            this.winningLabel.Visible = false;
             // 
             // entity1
             // 
@@ -325,6 +326,7 @@
             this.Controls.Add(this.entity3);
             this.Controls.Add(this.Background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
