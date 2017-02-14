@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.betOffice = new System.Windows.Forms.GroupBox();
+            this.betLabel = new System.Windows.Forms.Label();
             this.winningLabel = new System.Windows.Forms.Label();
             this.goBtn = new System.Windows.Forms.Button();
             this.centerMessage = new System.Windows.Forms.TextBox();
@@ -51,7 +52,12 @@
             this.entity2 = new System.Windows.Forms.PictureBox();
             this.entity3 = new System.Windows.Forms.PictureBox();
             this.Background = new System.Windows.Forms.PictureBox();
-            this.betLabel = new System.Windows.Forms.Label();
+            this.cashUpdate = new System.Windows.Forms.Timer(this.components);
+            this.entity5 = new System.Windows.Forms.PictureBox();
+            this.entity6 = new System.Windows.Forms.PictureBox();
+            this.entity7 = new System.Windows.Forms.PictureBox();
+            this.entity8 = new System.Windows.Forms.PictureBox();
+            this.entity9 = new System.Windows.Forms.PictureBox();
             this.betOffice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.targetNumbers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).BeginInit();
@@ -60,12 +66,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.entity2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity9)).BeginInit();
             this.SuspendLayout();
             // 
             // betOffice
             // 
             this.betOffice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.betOffice.BackColor = System.Drawing.SystemColors.Control;
             this.betOffice.Controls.Add(this.betLabel);
             this.betOffice.Controls.Add(this.winningLabel);
             this.betOffice.Controls.Add(this.goBtn);
@@ -81,12 +93,22 @@
             this.betOffice.Controls.Add(this.player2);
             this.betOffice.Controls.Add(this.betBtn);
             this.betOffice.Controls.Add(this.betAmount);
-            this.betOffice.Location = new System.Drawing.Point(12, 348);
+            this.betOffice.Location = new System.Drawing.Point(12, 491);
             this.betOffice.Name = "betOffice";
-            this.betOffice.Size = new System.Drawing.Size(886, 203);
+            this.betOffice.Size = new System.Drawing.Size(1206, 203);
             this.betOffice.TabIndex = 5;
             this.betOffice.TabStop = false;
             this.betOffice.Text = "Bet office";
+            // 
+            // betLabel
+            // 
+            this.betLabel.AutoSize = true;
+            this.betLabel.Location = new System.Drawing.Point(257, 46);
+            this.betLabel.Name = "betLabel";
+            this.betLabel.Size = new System.Drawing.Size(68, 17);
+            this.betLabel.TabIndex = 6;
+            this.betLabel.Text = "TESTING";
+            this.betLabel.Visible = false;
             // 
             // winningLabel
             // 
@@ -101,7 +123,7 @@
             // goBtn
             // 
             this.goBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.goBtn.Location = new System.Drawing.Point(795, 161);
+            this.goBtn.Location = new System.Drawing.Point(1115, 161);
             this.goBtn.Name = "goBtn";
             this.goBtn.Size = new System.Drawing.Size(85, 36);
             this.goBtn.TabIndex = 3;
@@ -112,7 +134,7 @@
             // centerMessage
             // 
             this.centerMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.centerMessage.Location = new System.Drawing.Point(546, 74);
+            this.centerMessage.Location = new System.Drawing.Point(866, 74);
             this.centerMessage.Name = "centerMessage";
             this.centerMessage.ReadOnly = true;
             this.centerMessage.Size = new System.Drawing.Size(281, 22);
@@ -121,7 +143,7 @@
             // bottomMessage
             // 
             this.bottomMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.bottomMessage.Location = new System.Drawing.Point(546, 102);
+            this.bottomMessage.Location = new System.Drawing.Point(866, 102);
             this.bottomMessage.Name = "bottomMessage";
             this.bottomMessage.ReadOnly = true;
             this.bottomMessage.Size = new System.Drawing.Size(281, 22);
@@ -130,7 +152,7 @@
             // topMessage
             // 
             this.topMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.topMessage.Location = new System.Drawing.Point(546, 46);
+            this.topMessage.Location = new System.Drawing.Point(866, 46);
             this.topMessage.Name = "topMessage";
             this.topMessage.ReadOnly = true;
             this.topMessage.Size = new System.Drawing.Size(281, 22);
@@ -161,7 +183,7 @@
             this.betListTitle.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.betListTitle.AutoSize = true;
             this.betListTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.betListTitle.Location = new System.Drawing.Point(638, 18);
+            this.betListTitle.Location = new System.Drawing.Point(958, 18);
             this.betListTitle.Name = "betListTitle";
             this.betListTitle.Size = new System.Drawing.Size(51, 25);
             this.betListTitle.TabIndex = 9;
@@ -190,7 +212,7 @@
             // 
             this.targetNumbers.Location = new System.Drawing.Point(339, 174);
             this.targetNumbers.Maximum = new decimal(new int[] {
-            4,
+            9,
             0,
             0,
             0});
@@ -260,7 +282,7 @@
             this.entity1.BackColor = System.Drawing.Color.Transparent;
             this.entity1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity1.BackgroundImage")));
             this.entity1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity1.Location = new System.Drawing.Point(23, 12);
+            this.entity1.Location = new System.Drawing.Point(23, -1);
             this.entity1.Name = "entity1";
             this.entity1.Size = new System.Drawing.Size(100, 35);
             this.entity1.TabIndex = 4;
@@ -271,7 +293,7 @@
             this.entity4.BackColor = System.Drawing.Color.Transparent;
             this.entity4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity4.BackgroundImage")));
             this.entity4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity4.Location = new System.Drawing.Point(23, 287);
+            this.entity4.Location = new System.Drawing.Point(23, 161);
             this.entity4.Name = "entity4";
             this.entity4.Size = new System.Drawing.Size(100, 35);
             this.entity4.TabIndex = 3;
@@ -282,7 +304,7 @@
             this.entity2.BackColor = System.Drawing.Color.Transparent;
             this.entity2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity2.BackgroundImage")));
             this.entity2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity2.Location = new System.Drawing.Point(23, 95);
+            this.entity2.Location = new System.Drawing.Point(23, 50);
             this.entity2.Name = "entity2";
             this.entity2.Size = new System.Drawing.Size(100, 35);
             this.entity2.TabIndex = 2;
@@ -291,9 +313,9 @@
             // entity3
             // 
             this.entity3.BackColor = System.Drawing.Color.Transparent;
+            this.entity3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity3.BackgroundImage")));
             this.entity3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity3.Image = global::Gokkers.Properties.Resources.Dog;
-            this.entity3.Location = new System.Drawing.Point(23, 197);
+            this.entity3.Location = new System.Drawing.Point(23, 111);
             this.entity3.Name = "entity3";
             this.entity3.Size = new System.Drawing.Size(100, 35);
             this.entity3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -305,29 +327,86 @@
             this.Background.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.Background.BackgroundImage = global::Gokkers.Properties.Resources.PictureBox1;
+            this.Background.BackColor = System.Drawing.Color.Transparent;
+            this.Background.BackgroundImage = global::Gokkers.Properties.Resources.sea_background;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Background.Location = new System.Drawing.Point(1, -1);
             this.Background.Name = "Background";
-            this.Background.Size = new System.Drawing.Size(904, 343);
+            this.Background.Size = new System.Drawing.Size(1224, 486);
             this.Background.TabIndex = 0;
             this.Background.TabStop = false;
             // 
-            // betLabel
+            // cashUpdate
             // 
-            this.betLabel.AutoSize = true;
-            this.betLabel.Location = new System.Drawing.Point(257, 46);
-            this.betLabel.Name = "betLabel";
-            this.betLabel.Size = new System.Drawing.Size(68, 17);
-            this.betLabel.TabIndex = 6;
-            this.betLabel.Text = "TESTING";
-            this.betLabel.Visible = false;
+            this.cashUpdate.Enabled = true;
+            this.cashUpdate.Tick += new System.EventHandler(this.cashUpdate_Tick);
+            // 
+            // entity5
+            // 
+            this.entity5.BackColor = System.Drawing.Color.Transparent;
+            this.entity5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity5.BackgroundImage")));
+            this.entity5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity5.Location = new System.Drawing.Point(23, 231);
+            this.entity5.Name = "entity5";
+            this.entity5.Size = new System.Drawing.Size(100, 35);
+            this.entity5.TabIndex = 6;
+            this.entity5.TabStop = false;
+            // 
+            // entity6
+            // 
+            this.entity6.BackColor = System.Drawing.Color.Transparent;
+            this.entity6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity6.BackgroundImage")));
+            this.entity6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity6.Location = new System.Drawing.Point(23, 293);
+            this.entity6.Name = "entity6";
+            this.entity6.Size = new System.Drawing.Size(100, 35);
+            this.entity6.TabIndex = 7;
+            this.entity6.TabStop = false;
+            // 
+            // entity7
+            // 
+            this.entity7.BackColor = System.Drawing.Color.Transparent;
+            this.entity7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity7.BackgroundImage")));
+            this.entity7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity7.Location = new System.Drawing.Point(23, 344);
+            this.entity7.Name = "entity7";
+            this.entity7.Size = new System.Drawing.Size(100, 35);
+            this.entity7.TabIndex = 8;
+            this.entity7.TabStop = false;
+            // 
+            // entity8
+            // 
+            this.entity8.BackColor = System.Drawing.Color.Transparent;
+            this.entity8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity8.BackgroundImage")));
+            this.entity8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity8.Location = new System.Drawing.Point(23, 402);
+            this.entity8.Name = "entity8";
+            this.entity8.Size = new System.Drawing.Size(100, 35);
+            this.entity8.TabIndex = 9;
+            this.entity8.TabStop = false;
+            // 
+            // entity9
+            // 
+            this.entity9.BackColor = System.Drawing.Color.Transparent;
+            this.entity9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity9.BackgroundImage")));
+            this.entity9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity9.Location = new System.Drawing.Point(23, 450);
+            this.entity9.Name = "entity9";
+            this.entity9.Size = new System.Drawing.Size(100, 35);
+            this.entity9.TabIndex = 10;
+            this.entity9.TabStop = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 555);
+            this.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.ClientSize = new System.Drawing.Size(1230, 698);
+            this.Controls.Add(this.entity9);
+            this.Controls.Add(this.entity8);
+            this.Controls.Add(this.entity7);
+            this.Controls.Add(this.entity6);
+            this.Controls.Add(this.entity5);
             this.Controls.Add(this.betOffice);
             this.Controls.Add(this.entity1);
             this.Controls.Add(this.entity4);
@@ -348,6 +427,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.entity2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -376,6 +460,12 @@
         private System.Windows.Forms.Label winningLabel;
         private System.Windows.Forms.TextBox bottomMessage;
         private System.Windows.Forms.Label betLabel;
+        private System.Windows.Forms.Timer cashUpdate;
+        private System.Windows.Forms.PictureBox entity5;
+        private System.Windows.Forms.PictureBox entity6;
+        private System.Windows.Forms.PictureBox entity7;
+        private System.Windows.Forms.PictureBox entity8;
+        private System.Windows.Forms.PictureBox entity9;
     }
 }
 

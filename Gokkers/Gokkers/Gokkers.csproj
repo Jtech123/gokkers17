@@ -88,6 +88,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="assets\png\Dog.png" />
+    <Content Include="assets\png\fish.png" />
+    <None Include="assets\png\sea_background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

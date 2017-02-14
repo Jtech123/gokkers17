@@ -14,8 +14,8 @@ namespace Gokkers
 {
     public partial class Form1 : Form
     {
-        Greyhound[] contestants = new Greyhound[4];
-        PictureBox[] entitys = new PictureBox[4];
+        Greyhound[] contestants = new Greyhound[9];
+        PictureBox[] entitys = new PictureBox[9];
         RadioButton[] playerBoxes = new RadioButton[3];
         TextBox[] messageBoxes = new TextBox[3];
         Guy[] players = new Guy[3];
@@ -25,7 +25,8 @@ namespace Gokkers
         {
             for (int i = 0; i < contestants.Length; i++)
             {
-                contestants[i] = new Greyhound(625, entitys[i], entitys[i].Name);
+                contestants[i] = new Greyhound(850, entitys[i], entitys[i].Name);
+                entitys[i].BackColor = Color.Transparent;
             }
         }
 
@@ -47,6 +48,11 @@ namespace Gokkers
             entitys[1] = entity2;
             entitys[2] = entity3;
             entitys[3] = entity4;
+            entitys[4] = entity5;
+            entitys[5] = entity6;
+            entitys[6] = entity7;
+            entitys[7] = entity8;
+            entitys[8] = entity9;
             playerBoxes[0] = player1;
             playerBoxes[1] = player2;
             playerBoxes[2] = player3;
@@ -55,6 +61,12 @@ namespace Gokkers
             messageBoxes[2] = topMessage;
             CreateEntity();
             CreatePlayers();
+            foreach (var entity in entitys)
+            {
+                Background.Controls.Add(entity);
+                entity.Location = new Point(entity.Location.X, entity.Location.Y);
+                entity.BackColor = Color.Transparent;
+            }
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -71,17 +83,12 @@ namespace Gokkers
                 else
                 {
                     item.Run(winningLabel);
-                    foreach(var player in players)
-                    {
-                        player.SetBoxText();
-                    }
                 }
             }
         }
 
         private void goBtn_Click(object sender, EventArgs e)
         {
-            
             timer1.Start();
             foreach (var item in contestants)
             {
@@ -92,7 +99,6 @@ namespace Gokkers
         private void betBtn_Click(object sender, EventArgs e)
         {
             decimal betValue;
-            
             betValue = betAmount.Value;
             if (player1.Checked)
             {
@@ -100,7 +106,6 @@ namespace Gokkers
                 {
                     players[0].ActivateBet(betValue, targetNumbers.Value);
                     players[0].UpdateMessage(messageBoxes);
-
                 }
             }
             else if (player2.Checked)
@@ -119,11 +124,14 @@ namespace Gokkers
                     players[2].UpdateMessage(messageBoxes);
                 }
             }
-            
-            
-
         }
 
-        
+        private void cashUpdate_Tick(object sender, EventArgs e)
+        {
+            foreach (var player in players)
+            {
+                player.SetBoxText();
+            }
+        }
     }
 }

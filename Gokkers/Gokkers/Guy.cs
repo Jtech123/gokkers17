@@ -40,7 +40,6 @@ namespace Gokkers
             this.betValue = value;
             this.cash -= this.betValue;
             this.target = target;
-           
         }
 
         public void Winning(Label betting)
@@ -52,7 +51,6 @@ namespace Gokkers
 
         public void Losing()
         {
-
         }
 
         public void UpdateMessage(TextBox[] messageBoxes)
