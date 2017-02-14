@@ -13,15 +13,15 @@ namespace Gokkers
         public static Random Randomizer = new Random();
         public int RaceTrackLength;
         public PictureBox MyPictureBox;
-       
+        private string name;
         
         private int distance;
         
-        public Greyhound(int RaceTrackLength, PictureBox MyPictureBox)
+        public Greyhound(int RaceTrackLength, PictureBox MyPictureBox, string name)
         {
             this.RaceTrackLength = RaceTrackLength;
             this.MyPictureBox = MyPictureBox;
-            
+            this.name = name;
         }
 
         public bool Run(Label winner)
@@ -45,6 +45,16 @@ namespace Gokkers
         public void TakeStartingPosition()
         {
             this.MyPictureBox.Location = new Point(23, this.MyPictureBox.Location.Y);
+        }
+
+        public string GetName()
+        {
+            return this.name;
+        }
+
+        public int GetPosX()
+        {
+            return MyPictureBox.Location.X;
         }
     }
 }

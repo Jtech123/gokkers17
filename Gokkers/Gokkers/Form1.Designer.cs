@@ -33,15 +33,15 @@
             this.betOffice = new System.Windows.Forms.GroupBox();
             this.winningLabel = new System.Windows.Forms.Label();
             this.goBtn = new System.Windows.Forms.Button();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.centerMessage = new System.Windows.Forms.TextBox();
+            this.bottomMessage = new System.Windows.Forms.TextBox();
+            this.topMessage = new System.Windows.Forms.TextBox();
             this.betSetTitle = new System.Windows.Forms.Label();
             this.player3 = new System.Windows.Forms.RadioButton();
             this.betListTitle = new System.Windows.Forms.Label();
             this.player1 = new System.Windows.Forms.RadioButton();
             this.messageLbl = new System.Windows.Forms.Label();
-            this.numericUpDown2 = new System.Windows.Forms.NumericUpDown();
+            this.targetNumbers = new System.Windows.Forms.NumericUpDown();
             this.player2 = new System.Windows.Forms.RadioButton();
             this.betBtn = new System.Windows.Forms.Button();
             this.betAmount = new System.Windows.Forms.NumericUpDown();
@@ -51,8 +51,9 @@
             this.entity2 = new System.Windows.Forms.PictureBox();
             this.entity3 = new System.Windows.Forms.PictureBox();
             this.Background = new System.Windows.Forms.PictureBox();
+            this.betLabel = new System.Windows.Forms.Label();
             this.betOffice.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.targetNumbers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity4)).BeginInit();
@@ -65,17 +66,18 @@
             // 
             this.betOffice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.betOffice.Controls.Add(this.betLabel);
             this.betOffice.Controls.Add(this.winningLabel);
             this.betOffice.Controls.Add(this.goBtn);
-            this.betOffice.Controls.Add(this.textBox2);
-            this.betOffice.Controls.Add(this.textBox3);
-            this.betOffice.Controls.Add(this.textBox1);
+            this.betOffice.Controls.Add(this.centerMessage);
+            this.betOffice.Controls.Add(this.bottomMessage);
+            this.betOffice.Controls.Add(this.topMessage);
             this.betOffice.Controls.Add(this.betSetTitle);
             this.betOffice.Controls.Add(this.player3);
             this.betOffice.Controls.Add(this.betListTitle);
             this.betOffice.Controls.Add(this.player1);
             this.betOffice.Controls.Add(this.messageLbl);
-            this.betOffice.Controls.Add(this.numericUpDown2);
+            this.betOffice.Controls.Add(this.targetNumbers);
             this.betOffice.Controls.Add(this.player2);
             this.betOffice.Controls.Add(this.betBtn);
             this.betOffice.Controls.Add(this.betAmount);
@@ -107,32 +109,32 @@
             this.goBtn.UseVisualStyleBackColor = true;
             this.goBtn.Click += new System.EventHandler(this.goBtn_Click);
             // 
-            // textBox2
+            // centerMessage
             // 
-            this.textBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox2.Location = new System.Drawing.Point(546, 74);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(281, 22);
-            this.textBox2.TabIndex = 11;
+            this.centerMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.centerMessage.Location = new System.Drawing.Point(546, 74);
+            this.centerMessage.Name = "centerMessage";
+            this.centerMessage.ReadOnly = true;
+            this.centerMessage.Size = new System.Drawing.Size(281, 22);
+            this.centerMessage.TabIndex = 11;
             // 
-            // textBox3
+            // bottomMessage
             // 
-            this.textBox3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox3.Location = new System.Drawing.Point(546, 102);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(281, 22);
-            this.textBox3.TabIndex = 12;
+            this.bottomMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.bottomMessage.Location = new System.Drawing.Point(546, 102);
+            this.bottomMessage.Name = "bottomMessage";
+            this.bottomMessage.ReadOnly = true;
+            this.bottomMessage.Size = new System.Drawing.Size(281, 22);
+            this.bottomMessage.TabIndex = 12;
             // 
-            // textBox1
+            // topMessage
             // 
-            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(546, 46);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(281, 22);
-            this.textBox1.TabIndex = 10;
+            this.topMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.topMessage.Location = new System.Drawing.Point(546, 46);
+            this.topMessage.Name = "topMessage";
+            this.topMessage.ReadOnly = true;
+            this.topMessage.Size = new System.Drawing.Size(281, 22);
+            this.topMessage.TabIndex = 10;
             // 
             // betSetTitle
             // 
@@ -151,7 +153,6 @@
             this.player3.Name = "player3";
             this.player3.Size = new System.Drawing.Size(50, 21);
             this.player3.TabIndex = 8;
-            this.player3.TabStop = true;
             this.player3.Text = "Fer";
             this.player3.UseVisualStyleBackColor = true;
             // 
@@ -173,7 +174,6 @@
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(68, 21);
             this.player1.TabIndex = 6;
-            this.player1.TabStop = true;
             this.player1.Text = "Sietse";
             this.player1.UseVisualStyleBackColor = true;
             // 
@@ -186,23 +186,23 @@
             this.messageLbl.TabIndex = 1;
             this.messageLbl.Text = "euro on dog number:";
             // 
-            // numericUpDown2
+            // targetNumbers
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(339, 174);
-            this.numericUpDown2.Maximum = new decimal(new int[] {
+            this.targetNumbers.Location = new System.Drawing.Point(339, 174);
+            this.targetNumbers.Maximum = new decimal(new int[] {
             4,
             0,
             0,
             0});
-            this.numericUpDown2.Minimum = new decimal(new int[] {
+            this.targetNumbers.Minimum = new decimal(new int[] {
             1,
             0,
             0,
             0});
-            this.numericUpDown2.Name = "numericUpDown2";
-            this.numericUpDown2.Size = new System.Drawing.Size(55, 22);
-            this.numericUpDown2.TabIndex = 5;
-            this.numericUpDown2.Value = new decimal(new int[] {
+            this.targetNumbers.Name = "targetNumbers";
+            this.targetNumbers.Size = new System.Drawing.Size(55, 22);
+            this.targetNumbers.TabIndex = 5;
+            this.targetNumbers.Value = new decimal(new int[] {
             1,
             0,
             0,
@@ -215,7 +215,6 @@
             this.player2.Name = "player2";
             this.player2.Size = new System.Drawing.Size(55, 21);
             this.player2.TabIndex = 7;
-            this.player2.TabStop = true;
             this.player2.Text = "Lydi";
             this.player2.UseVisualStyleBackColor = true;
             // 
@@ -314,6 +313,16 @@
             this.Background.TabIndex = 0;
             this.Background.TabStop = false;
             // 
+            // betLabel
+            // 
+            this.betLabel.AutoSize = true;
+            this.betLabel.Location = new System.Drawing.Point(257, 46);
+            this.betLabel.Name = "betLabel";
+            this.betLabel.Size = new System.Drawing.Size(68, 17);
+            this.betLabel.TabIndex = 6;
+            this.betLabel.Text = "TESTING";
+            this.betLabel.Visible = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -332,7 +341,7 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.betOffice.ResumeLayout(false);
             this.betOffice.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.targetNumbers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity4)).EndInit();
@@ -356,16 +365,17 @@
         private System.Windows.Forms.Button betBtn;
         private System.Windows.Forms.Button goBtn;
         private System.Windows.Forms.NumericUpDown betAmount;
-        private System.Windows.Forms.NumericUpDown numericUpDown2;
+        private System.Windows.Forms.NumericUpDown targetNumbers;
         private System.Windows.Forms.RadioButton player1;
         private System.Windows.Forms.RadioButton player2;
         private System.Windows.Forms.RadioButton player3;
         private System.Windows.Forms.Label betListTitle;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox topMessage;
+        private System.Windows.Forms.TextBox centerMessage;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.Label winningLabel;
+        private System.Windows.Forms.TextBox bottomMessage;
+        private System.Windows.Forms.Label betLabel;
     }
 }
 
