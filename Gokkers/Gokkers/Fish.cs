@@ -58,7 +58,7 @@ namespace Gokkers
 
         public void RemoveLast(Fish[] fish)
         {
-            
+            fish.
         }
     }
 }

@@ -85,7 +85,7 @@ namespace Gokkers
                 }
                 else
                 {
-                    //item.Run(winningLabel);
+                    item.Run(winningLabel);
                 }
             }
         }
