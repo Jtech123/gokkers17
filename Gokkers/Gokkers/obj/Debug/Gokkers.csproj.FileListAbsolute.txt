@@ -7,3 +7,6 @@ C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Pr
 C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csproj.GenerateResource.Cache
 C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.exe
 C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.pdb
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.exe.config
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.exe
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.pdb
