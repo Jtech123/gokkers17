@@ -147,6 +147,18 @@ namespace Gokkers
             foreach (var player in players)
             {
                 player.SetBoxText();
+                if(playerBoxes[0].Checked)
+                {
+                    betAmount.Maximum = players[0].ChangeMaxBet();
+                }
+                else if (playerBoxes[1].Checked)
+                {
+                    betAmount.Maximum = players[1].ChangeMaxBet();
+                }
+                else if (playerBoxes[2].Checked)
+                {
+                    betAmount.Maximum = players[2].ChangeMaxBet();
+                }
             }
         }
     }

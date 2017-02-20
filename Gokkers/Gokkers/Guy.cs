@@ -15,10 +15,11 @@ namespace Gokkers
         private decimal betValue;
         private decimal target;
         private RadioButton playerItem;
+        private decimal maxBet;
 
         public Guy(string name, RadioButton playerItem)
         {
-            this.cash = 100;
+            this.cash = 50;
             this.name = name;
             this.playerItem = playerItem;
         }
@@ -32,6 +33,20 @@ namespace Gokkers
             else
             {
                 return false;
+            }
+        }
+
+        public decimal ChangeMaxBet()
+        {
+            if (this.cash < 15)
+            {
+                this.maxBet = this.cash;
+                return this.maxBet;
+            }
+            else
+            {
+                this.maxBet = 15;
+                return this.maxBet;
             }
         }
 
