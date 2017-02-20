@@ -17,12 +17,12 @@ namespace Gokkers
                 {
                     if (("entity" + player.GetTarget().ToString()) == entity.GetName() && entity.GetPosX() >= entity.RaceTrackLength)
                     {
-                        player.Winning(betting);
+                        player.Collect(betting);
                         player.ShowWinnerMessage(messageBoxes);
                     }
                     else
                     {
-                        player.Losing();
+                        
                     }
                 }
             }

@@ -42,15 +42,11 @@ namespace Gokkers
             this.target = target;
         }
 
-        public void Winning(Label betting)
+        public void Collect(Label betting)
         {
             this.cash += (this.betValue * 2);
             betting.Text = this.name + " has won " + this.betValue + " account balance " + this.cash;
             betting.Visible = true;
-        }
-
-        public void Losing()
-        {
         }
 
         public void UpdateMessage(TextBox[] messageBoxes)

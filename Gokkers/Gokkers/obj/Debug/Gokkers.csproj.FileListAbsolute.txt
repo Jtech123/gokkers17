@@ -10,3 +10,12 @@ C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.pd
 C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.exe.config
 C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.exe
 C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.pdb
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.exe.config
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.exe
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.pdb
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csprojResolveAssemblyReference.cache
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Form1.resources
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Properties.Resources.resources
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csproj.GenerateResource.Cache
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.exe
+C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.pdb
