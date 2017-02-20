@@ -19,6 +19,7 @@ namespace Gokkers
         RadioButton[] playerBoxes = new RadioButton[3];
         TextBox[] messageBoxes = new TextBox[3];
         Guy[] players = new Guy[3];
+        int[] xpositions = new int[9];
         string[] messageHolder = new string[3];
         Bet bet = new Bet();
         public void CreateEntity()
@@ -73,19 +74,59 @@ namespace Gokkers
         {
             foreach (var item in contestants)
             {
-                bool result = item.Run(winningLabel);
-                if (result)
+                if (item == null)
                 {
-                    bet.CheckWinner(players, contestants, betLabel, messageBoxes);
-                    player1.Enabled = true;
-                    player2.Enabled = true;
-                    player3.Enabled = true;
-                    timer1.Stop();
-                    break;
+
                 }
-                else
-                {
-                    item.Run(winningLabel);
+                else {
+                    bool result = item.Run(winningLabel);
+                    if (result)
+                    {
+                        bet.CheckWinner(players, contestants, betLabel, messageBoxes);
+                        player1.Enabled = true;
+                        player2.Enabled = true;
+                        player3.Enabled = true;
+                        timer1.Stop();
+                        for (int i = 0; i < contestants.Length; i++)
+                        {
+                            if (contestants[i] == null)
+                            {
+
+                            }
+                            else {
+                                xpositions[i] = contestants[i].GetPosX();
+                            }
+                        }
+                        int loser = xpositions.Min();
+                        for (int j = 0; j < xpositions.Length; j++)
+                        {
+                            if (xpositions[j] == loser)
+                            {
+                                if (contestants[j] == null)
+                                {
+
+                                }
+                                else
+                                {
+                                    if (contestants[j].MyPictureBox.IsDisposed)
+                                    {
+                                        
+                                    }
+                                    Background.Controls.Remove(entitys[j]);
+                                    entitys[j].Dispose();
+                                    entitys[j] = null;
+                                    contestants[j].MyPictureBox = null;
+
+                                }
+
+                            }
+                        }
+                        break;
+                    }
+                    else
+                    {
+                        item.Run(winningLabel);
+                    }
                 }
             }
         }
@@ -95,7 +136,15 @@ namespace Gokkers
             timer1.Start();
             foreach (var item in contestants)
             {
-                item.TakeStartingPosition();
+                if (item == null)
+                {
+
+                }
+                else
+                {
+                    item.TakeStartingPosition();
+                }
+                
             }
             player1.Enabled = false;
             player1.Checked = false;

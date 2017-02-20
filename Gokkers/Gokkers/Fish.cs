@@ -26,11 +26,16 @@ namespace Gokkers
 
         public bool Run(Label winner)
         {
+
+            if (this.MyPictureBox.IsDisposed)
+            {
+                return false;
+            }
             if (this.MyPictureBox.Location.X < RaceTrackLength)
             {
 
                 distance = Randomizer.Next(1, 70);
-                this.MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + (distance / 10), this.MyPictureBox.Location.Y);
+                this.MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + (distance /*/ 10*/), this.MyPictureBox.Location.Y);
                 return false;
             }
             else {
@@ -43,7 +48,16 @@ namespace Gokkers
 
         public void TakeStartingPosition()
         {
-            this.MyPictureBox.Location = new Point(23, this.MyPictureBox.Location.Y);
+            if (this.MyPictureBox == null)
+            {
+                
+            }
+            else
+            {
+                this.MyPictureBox.Location = new Point(23, this.MyPictureBox.Location.Y);
+            }
+
+            
         }
 
         public string GetName()

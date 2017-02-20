@@ -15,14 +15,20 @@ namespace Gokkers
             {
                 foreach (var entity in entitys)
                 {
-                    if (("entity" + player.GetTarget().ToString()) == entity.GetName() && entity.GetPosX() >= entity.RaceTrackLength)
+                    if (entity == null)
                     {
-                        player.Collect(betting);
-                        player.ShowWinnerMessage(messageBoxes);
+
                     }
-                    else
-                    {
-                        //losing
+                    else {
+                        if (("entity" + player.GetTarget().ToString()) == entity.GetName() && entity.GetPosX() >= entity.RaceTrackLength)
+                        {
+                            player.Collect(betting);
+                            player.ShowWinnerMessage(messageBoxes);
+                        }
+                        else
+                        {
+                            //losing
+                        }
                     }
                 }
             }
