@@ -22,7 +22,7 @@ namespace Gokkers
                     }
                     else
                     {
-                        
+                        //losing
                     }
                 }
             }

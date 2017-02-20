@@ -144,23 +144,11 @@ namespace Gokkers
 
         private void cashUpdate_Tick(object sender, EventArgs e)
         {
-            /*foreach (var player in players)
+            foreach (var player in players)
             {
                 player.SetBoxText();
-                if(playerBoxes[0].Checked)
-                {
-                    betAmount.Maximum = players[0].ChangeMaxBet();
-                }
-                else if (playerBoxes[1].Checked)
-                {
-                    betAmount.Maximum = players[1].ChangeMaxBet();
-                }
-                else if (playerBoxes[2].Checked)
-                {
-                    betAmount.Maximum = players[2].ChangeMaxBet();
-                }
-
-            }*/
+                
+            }
             for (int i = 0; i < playerBoxes.Length; i++)
             {
                 if (playerBoxes[i].Checked)
