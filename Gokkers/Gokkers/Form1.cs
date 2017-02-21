@@ -108,15 +108,8 @@ namespace Gokkers
                                 }
                                 else
                                 {
-                                    if (contestants[j].MyPictureBox.IsDisposed)
-                                    {
-                                        
-                                    }
-                                    Background.Controls.Remove(entitys[j]);
-                                    entitys[j].Dispose();
-                                    entitys[j] = null;
-                                    contestants[j].MyPictureBox = null;
-
+                                    contestants[j].MyPictureBox.Location = new Point(1000, contestants[j].MyPictureBox.Location.Y);
+                                    contestants[j].SetHasLost(true);
                                 }
 
                             }

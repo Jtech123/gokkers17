@@ -13,6 +13,7 @@ namespace Gokkers
         public static Random Randomizer = new Random();
         public int RaceTrackLength;
         public PictureBox MyPictureBox;
+        private bool hasLost;
         private string name;
 
         private int distance;
@@ -22,6 +23,7 @@ namespace Gokkers
             this.RaceTrackLength = RaceTrackLength;
             this.MyPictureBox = MyPictureBox;
             this.name = name;
+            this.hasLost = false;
         }
 
         public bool Run(Label winner)
@@ -38,6 +40,10 @@ namespace Gokkers
                 this.MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + (distance /*/ 10*/), this.MyPictureBox.Location.Y);
                 return false;
             }
+            else if (this.MyPictureBox.Location.X == 1000)
+            {
+                return false;
+            }
             else {
                 winner.Text = MyPictureBox.Name + " Wins";
                 winner.Visible = true;
@@ -48,15 +54,20 @@ namespace Gokkers
 
         public void TakeStartingPosition()
         {
-            if (this.MyPictureBox == null)
+            if (this.hasLost)
             {
-                
-            }
-            else
-            {
-                this.MyPictureBox.Location = new Point(23, this.MyPictureBox.Location.Y);
-            }
 
+            }
+            else {
+                if (this.MyPictureBox == null)
+                {
+
+                }
+                else
+                {
+                    this.MyPictureBox.Location = new Point(23, this.MyPictureBox.Location.Y);
+                }
+            }
             
         }
 
@@ -73,6 +84,10 @@ namespace Gokkers
         public void RemoveLast(Fish[] fish)
         {
             
+        }
+        public void SetHasLost(bool hasLost)
+        {
+            this.hasLost = hasLost;
         }
     }
 }
