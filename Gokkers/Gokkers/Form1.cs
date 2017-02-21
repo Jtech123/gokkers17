@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
+using System.Media;
 using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
@@ -46,9 +48,15 @@ namespace Gokkers
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            //System.Media.SoundPlayer musicPlayer = new System.Media.SoundPlayer();
-            //musicPlayer.Stream = Properties.Resources.benny2;
-            //musicPlayer.Play();
+            
+
+            string fileName = @"mp3\BennyHill.mp3";
+            string path = Path.Combine(Environment.CurrentDirectory, @"assets\", fileName);
+
+            //SoundPlayer player = new SoundPlayer();
+            //player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\yourmusic.wav";
+            //player.Play();
+
             entitys[0] = fish1;
             entitys[1] = fish2;
             entitys[2] = fish3;
