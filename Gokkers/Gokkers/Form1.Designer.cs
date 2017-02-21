@@ -112,9 +112,9 @@
             this.betOffice.Controls.Add(this.betBtn);
             this.betOffice.Controls.Add(this.betAmount);
             this.betOffice.Location = new System.Drawing.Point(9, 399);
-            this.betOffice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.betOffice.Margin = new System.Windows.Forms.Padding(2);
             this.betOffice.Name = "betOffice";
-            this.betOffice.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.betOffice.Padding = new System.Windows.Forms.Padding(2);
             this.betOffice.Size = new System.Drawing.Size(904, 165);
             this.betOffice.TabIndex = 5;
             this.betOffice.TabStop = false;
@@ -146,7 +146,7 @@
             // 
             this.goBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.goBtn.Location = new System.Drawing.Point(836, 131);
-            this.goBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.goBtn.Margin = new System.Windows.Forms.Padding(2);
             this.goBtn.Name = "goBtn";
             this.goBtn.Size = new System.Drawing.Size(64, 29);
             this.goBtn.TabIndex = 3;
@@ -158,7 +158,7 @@
             // 
             this.centerMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.centerMessage.Location = new System.Drawing.Point(650, 60);
-            this.centerMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.centerMessage.Margin = new System.Windows.Forms.Padding(2);
             this.centerMessage.Name = "centerMessage";
             this.centerMessage.ReadOnly = true;
             this.centerMessage.Size = new System.Drawing.Size(212, 20);
@@ -168,7 +168,7 @@
             // 
             this.bottomMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bottomMessage.Location = new System.Drawing.Point(650, 83);
-            this.bottomMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bottomMessage.Margin = new System.Windows.Forms.Padding(2);
             this.bottomMessage.Name = "bottomMessage";
             this.bottomMessage.ReadOnly = true;
             this.bottomMessage.Size = new System.Drawing.Size(212, 20);
@@ -178,7 +178,7 @@
             // 
             this.topMessage.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.topMessage.Location = new System.Drawing.Point(650, 37);
-            this.topMessage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.topMessage.Margin = new System.Windows.Forms.Padding(2);
             this.topMessage.Name = "topMessage";
             this.topMessage.ReadOnly = true;
             this.topMessage.Size = new System.Drawing.Size(212, 20);
@@ -199,7 +199,7 @@
             // 
             this.player3.AutoSize = true;
             this.player3.Location = new System.Drawing.Point(8, 82);
-            this.player3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.player3.Margin = new System.Windows.Forms.Padding(2);
             this.player3.Name = "player3";
             this.player3.Size = new System.Drawing.Size(40, 17);
             this.player3.TabIndex = 8;
@@ -222,7 +222,7 @@
             // 
             this.player1.AutoSize = true;
             this.player1.Location = new System.Drawing.Point(8, 37);
-            this.player1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.player1.Margin = new System.Windows.Forms.Padding(2);
             this.player1.Name = "player1";
             this.player1.Size = new System.Drawing.Size(54, 17);
             this.player1.TabIndex = 6;
@@ -242,7 +242,7 @@
             // targetNumbers
             // 
             this.targetNumbers.Location = new System.Drawing.Point(254, 141);
-            this.targetNumbers.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.targetNumbers.Margin = new System.Windows.Forms.Padding(2);
             this.targetNumbers.Maximum = new decimal(new int[] {
             9,
             0,
@@ -266,7 +266,7 @@
             // 
             this.player2.AutoSize = true;
             this.player2.Location = new System.Drawing.Point(8, 59);
-            this.player2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.player2.Margin = new System.Windows.Forms.Padding(2);
             this.player2.Name = "player2";
             this.player2.Size = new System.Drawing.Size(44, 17);
             this.player2.TabIndex = 7;
@@ -276,7 +276,7 @@
             // betBtn
             // 
             this.betBtn.Location = new System.Drawing.Point(43, 140);
-            this.betBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.betBtn.Margin = new System.Windows.Forms.Padding(2);
             this.betBtn.Name = "betBtn";
             this.betBtn.Size = new System.Drawing.Size(56, 19);
             this.betBtn.TabIndex = 2;
@@ -287,7 +287,7 @@
             // betAmount
             // 
             this.betAmount.Location = new System.Drawing.Point(104, 140);
-            this.betAmount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.betAmount.Margin = new System.Windows.Forms.Padding(2);
             this.betAmount.Maximum = new decimal(new int[] {
             15,
             0,
@@ -318,7 +318,7 @@
             this.entity1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity1.BackgroundImage")));
             this.entity1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity1.Location = new System.Drawing.Point(17, -1);
-            this.entity1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity1.Margin = new System.Windows.Forms.Padding(2);
             this.entity1.Name = "entity1";
             this.entity1.Size = new System.Drawing.Size(75, 28);
             this.entity1.TabIndex = 4;
@@ -330,7 +330,7 @@
             this.entity4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity4.BackgroundImage")));
             this.entity4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity4.Location = new System.Drawing.Point(17, 131);
-            this.entity4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity4.Margin = new System.Windows.Forms.Padding(2);
             this.entity4.Name = "entity4";
             this.entity4.Size = new System.Drawing.Size(75, 28);
             this.entity4.TabIndex = 3;
@@ -342,7 +342,7 @@
             this.entity2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity2.BackgroundImage")));
             this.entity2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity2.Location = new System.Drawing.Point(17, 41);
-            this.entity2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity2.Margin = new System.Windows.Forms.Padding(2);
             this.entity2.Name = "entity2";
             this.entity2.Size = new System.Drawing.Size(75, 28);
             this.entity2.TabIndex = 2;
@@ -354,7 +354,7 @@
             this.entity3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity3.BackgroundImage")));
             this.entity3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity3.Location = new System.Drawing.Point(17, 90);
-            this.entity3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity3.Margin = new System.Windows.Forms.Padding(2);
             this.entity3.Name = "entity3";
             this.entity3.Size = new System.Drawing.Size(75, 28);
             this.entity3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -370,7 +370,7 @@
             this.Background.BackgroundImage = global::Gokkers.Properties.Resources.sea_background;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Background.Location = new System.Drawing.Point(1, -1);
-            this.Background.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Background.Margin = new System.Windows.Forms.Padding(2);
             this.Background.Name = "Background";
             this.Background.Size = new System.Drawing.Size(918, 395);
             this.Background.TabIndex = 0;
@@ -387,7 +387,7 @@
             this.entity5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity5.BackgroundImage")));
             this.entity5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity5.Location = new System.Drawing.Point(17, 188);
-            this.entity5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity5.Margin = new System.Windows.Forms.Padding(2);
             this.entity5.Name = "entity5";
             this.entity5.Size = new System.Drawing.Size(75, 28);
             this.entity5.TabIndex = 6;
@@ -399,7 +399,7 @@
             this.entity6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity6.BackgroundImage")));
             this.entity6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity6.Location = new System.Drawing.Point(17, 238);
-            this.entity6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity6.Margin = new System.Windows.Forms.Padding(2);
             this.entity6.Name = "entity6";
             this.entity6.Size = new System.Drawing.Size(75, 28);
             this.entity6.TabIndex = 7;
@@ -411,7 +411,7 @@
             this.entity7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity7.BackgroundImage")));
             this.entity7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity7.Location = new System.Drawing.Point(17, 280);
-            this.entity7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity7.Margin = new System.Windows.Forms.Padding(2);
             this.entity7.Name = "entity7";
             this.entity7.Size = new System.Drawing.Size(75, 28);
             this.entity7.TabIndex = 8;
@@ -423,7 +423,7 @@
             this.entity8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity8.BackgroundImage")));
             this.entity8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity8.Location = new System.Drawing.Point(17, 327);
-            this.entity8.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity8.Margin = new System.Windows.Forms.Padding(2);
             this.entity8.Name = "entity8";
             this.entity8.Size = new System.Drawing.Size(75, 28);
             this.entity8.TabIndex = 9;
@@ -435,7 +435,7 @@
             this.entity9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity9.BackgroundImage")));
             this.entity9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.entity9.Location = new System.Drawing.Point(17, 366);
-            this.entity9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.entity9.Margin = new System.Windows.Forms.Padding(2);
             this.entity9.Name = "entity9";
             this.entity9.Size = new System.Drawing.Size(75, 28);
             this.entity9.TabIndex = 10;
@@ -578,7 +578,7 @@
             this.Controls.Add(this.Background);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Fishy Thingy";
