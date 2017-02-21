@@ -117,7 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="gameTimer.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>13, 20</value>
   </metadata>
   <metadata name="cashUpdate.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
@@ -10609,7 +10609,7 @@
         m7rf73V5Xf6+dLvxdXldXpfftzRdipXhZ3+//XV5Xf79gj/8P+6hP8OEjCFLAAAAAElFTkSuQmCC
 </value>
   </data>
-  <data name="entity9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish9.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -10938,7 +10938,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish8.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -11267,7 +11267,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish7.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -11596,7 +11596,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish6.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -11925,7 +11925,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish5.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -12254,7 +12254,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -12583,7 +12583,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -12912,7 +12912,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H
@@ -13241,7 +13241,7 @@
         xcgdgyEAAAAASUVORK5CYII=
 </value>
   </data>
-  <data name="entity3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="fish3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAASwAAAClCAYAAADmtcDRAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAP
         7AAAD+wBhDxGaQAAABl0RVh0U29mdHdhcmUAcGFpbnQubmV0IDQuMC4xMzQDW3oAAEt+SURBVHhe7V0H

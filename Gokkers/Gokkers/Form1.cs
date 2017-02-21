@@ -46,15 +46,15 @@ namespace Gokkers
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            entitys[0] = entity1;
-            entitys[1] = entity2;
-            entitys[2] = entity3;
-            entitys[3] = entity4;
-            entitys[4] = entity5;
-            entitys[5] = entity6;
-            entitys[6] = entity7;
-            entitys[7] = entity8;
-            entitys[8] = entity9;
+            entitys[0] = fish1;
+            entitys[1] = fish2;
+            entitys[2] = fish3;
+            entitys[3] = fish4;
+            entitys[4] = fish5;
+            entitys[5] = fish6;
+            entitys[6] = fish7;
+            entitys[7] = fish8;
+            entitys[8] = fish9;
             fishsticks[0] = fishStick1;
             fishsticks[1] = fishStick2;
             fishsticks[2] = fishStick3;
@@ -86,7 +86,7 @@ namespace Gokkers
             }
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void gameTimer_Tick(object sender, EventArgs e)
         {
             foreach (var item in contestants)
             {
@@ -102,7 +102,7 @@ namespace Gokkers
                         player1.Enabled = true;
                         player2.Enabled = true;
                         player3.Enabled = true;
-                        timer1.Stop();
+                        gameTimer.Stop();
                         for (int i = 0; i < contestants.Length; i++)
                         {
                             if (contestants[i] == null)
@@ -145,7 +145,7 @@ namespace Gokkers
         {
             winningLabel.Visible = false;
             betLabel.Visible = false;
-            timer1.Start();
+            gameTimer.Start();
             foreach (var item in contestants)
             {
                 if (item == null)
