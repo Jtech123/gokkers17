@@ -67,6 +67,7 @@
             this.fish2 = new System.Windows.Forms.PictureBox();
             this.fish3 = new System.Windows.Forms.PictureBox();
             this.Background = new System.Windows.Forms.PictureBox();
+            this.resetBtn = new System.Windows.Forms.Button();
             this.betOffice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.targetNumbers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).BeginInit();
@@ -96,6 +97,7 @@
             this.betOffice.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.betOffice.BackColor = System.Drawing.SystemColors.Control;
+            this.betOffice.Controls.Add(this.resetBtn);
             this.betOffice.Controls.Add(this.betLabel);
             this.betOffice.Controls.Add(this.winningLabel);
             this.betOffice.Controls.Add(this.goBtn);
@@ -125,9 +127,9 @@
             this.betLabel.AutoSize = true;
             this.betLabel.Location = new System.Drawing.Point(257, 46);
             this.betLabel.Name = "betLabel";
-            this.betLabel.Size = new System.Drawing.Size(68, 17);
+            this.betLabel.Size = new System.Drawing.Size(137, 17);
             this.betLabel.TabIndex = 6;
-            this.betLabel.Text = "TESTING";
+            this.betLabel.Text = "WHO && HOW MUCH";
             this.betLabel.Visible = false;
             // 
             // winningLabel
@@ -554,6 +556,20 @@
             this.Background.TabIndex = 0;
             this.Background.TabStop = false;
             // 
+            // resetBtn
+            // 
+            this.resetBtn.FlatAppearance.BorderSize = 0;
+            this.resetBtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.resetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetBtn.Location = new System.Drawing.Point(1025, 161);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(85, 36);
+            this.resetBtn.TabIndex = 13;
+            this.resetBtn.Text = "Reset";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -653,6 +669,7 @@
         private System.Windows.Forms.PictureBox fishStick4;
         private System.Windows.Forms.PictureBox fishStick2;
         private System.Windows.Forms.PictureBox fishStick3;
+        private System.Windows.Forms.Button resetBtn;
     }
 }
 
