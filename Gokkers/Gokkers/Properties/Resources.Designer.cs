@@ -63,6 +63,15 @@ namespace Gokkers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream benny2 {
+            get {
+                return ResourceManager.GetStream("benny2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream BennyHill {
             get {
                 return ResourceManager.GetStream("BennyHill", resourceCulture);

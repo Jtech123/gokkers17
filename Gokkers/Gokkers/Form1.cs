@@ -46,9 +46,9 @@ namespace Gokkers
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            System.Media.SoundPlayer musicPlayer = new System.Media.SoundPlayer();
-            musicPlayer.Stream = Properties.Resources.BennyHill;
-            musicPlayer.PlayLooping();
+            //System.Media.SoundPlayer musicPlayer = new System.Media.SoundPlayer();
+            //musicPlayer.Stream = Properties.Resources.benny2;
+            //musicPlayer.Play();
             entitys[0] = fish1;
             entitys[1] = fish2;
             entitys[2] = fish3;
