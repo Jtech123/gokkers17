@@ -22,3 +22,9 @@ C:\Users\shoev\OneDrive\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gok
 C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.exe.config
 C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.exe
 C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.pdb
+C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.exe
+C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.pdb
+C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csprojResolveAssemblyReference.cache
+C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Form1.resources
+C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Properties.Resources.resources
+C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csproj.GenerateResource.Cache

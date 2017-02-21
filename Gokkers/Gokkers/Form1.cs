@@ -15,6 +15,7 @@ namespace Gokkers
     public partial class Form1 : Form
     {
         Fish[] contestants = new Fish[9];
+        PictureBox[] fishsticks = new PictureBox[9];
         PictureBox[] entitys = new PictureBox[9];
         RadioButton[] playerBoxes = new RadioButton[3];
         TextBox[] messageBoxes = new TextBox[3];
@@ -54,6 +55,15 @@ namespace Gokkers
             entitys[6] = entity7;
             entitys[7] = entity8;
             entitys[8] = entity9;
+            fishsticks[0] = fishStick1;
+            fishsticks[1] = fishStick2;
+            fishsticks[2] = fishStick3;
+            fishsticks[3] = fishStick4;
+            fishsticks[4] = fishStick5;
+            fishsticks[5] = fishStick6;
+            fishsticks[6] = fishStick7;
+            fishsticks[7] = fishStick8;
+            fishsticks[8] = fishStick9;
             playerBoxes[0] = player1;
             playerBoxes[1] = player2;
             playerBoxes[2] = player3;
@@ -67,6 +77,12 @@ namespace Gokkers
                 Background.Controls.Add(entity);
                 entity.Location = new Point(entity.Location.X, entity.Location.Y);
                 entity.BackColor = Color.Transparent;
+            }
+            foreach (var fishstick in fishsticks)
+            {
+                Background.Controls.Add(fishstick);
+                fishstick.Location = new Point(fishstick.Location.X, fishstick.Location.Y);
+                fishstick.BackColor = Color.Transparent;
             }
         }
 
@@ -110,6 +126,7 @@ namespace Gokkers
                                 {
                                     contestants[j].MyPictureBox.Location = new Point(1000, contestants[j].MyPictureBox.Location.Y);
                                     contestants[j].SetHasLost(true);
+                                    fishsticks[j].Visible = true;
                                 }
 
                             }

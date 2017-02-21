@@ -36,18 +36,23 @@ namespace Gokkers
             if (this.MyPictureBox.Location.X < RaceTrackLength)
             {
 
-                distance = Randomizer.Next(1, 70);
-                this.MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + (distance /*/ 10*/), this.MyPictureBox.Location.Y);
+                distance = Randomizer.Next(1, 50);
+                this.MyPictureBox.Location = new Point(this.MyPictureBox.Location.X + (distance / 10), this.MyPictureBox.Location.Y);
                 return false;
             }
             else if (this.MyPictureBox.Location.X == 1000)
             {
                 return false;
             }
-            else {
+            else if ((this.MyPictureBox.Location.X < 870) && (this.MyPictureBox.Location.X >= RaceTrackLength))
+            {
                 winner.Text = MyPictureBox.Name + " Wins";
                 winner.Visible = true;
                 return true;
+            }
+            else
+            {
+                return false;
             }
 
         }
@@ -56,7 +61,7 @@ namespace Gokkers
         {
             if (this.hasLost)
             {
-
+                this.MyPictureBox.Location = new Point(1000, this.MyPictureBox.Location.Y);
             }
             else {
                 if (this.MyPictureBox == null)
@@ -79,6 +84,10 @@ namespace Gokkers
         public int GetPosX()
         {
             return MyPictureBox.Location.X;
+        }
+        public bool GetHasLost()
+        {
+            return this.hasLost;
         }
 
         public void RemoveLast(Fish[] fish)

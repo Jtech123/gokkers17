@@ -83,6 +83,16 @@ namespace Gokkers.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap fisstick {
+            get {
+                object obj = ResourceManager.GetObject("fisstick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap PictureBox1 {
             get {
                 object obj = ResourceManager.GetObject("PictureBox1", resourceCulture);

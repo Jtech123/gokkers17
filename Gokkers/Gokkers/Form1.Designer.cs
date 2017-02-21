@@ -47,48 +47,48 @@
             this.betBtn = new System.Windows.Forms.Button();
             this.betAmount = new System.Windows.Forms.NumericUpDown();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.cashUpdate = new System.Windows.Forms.Timer(this.components);
+            this.fishStick9 = new System.Windows.Forms.PictureBox();
+            this.fishStick8 = new System.Windows.Forms.PictureBox();
+            this.fishStick7 = new System.Windows.Forms.PictureBox();
+            this.fishStick6 = new System.Windows.Forms.PictureBox();
+            this.fishStick5 = new System.Windows.Forms.PictureBox();
+            this.fishStick4 = new System.Windows.Forms.PictureBox();
+            this.fishStick2 = new System.Windows.Forms.PictureBox();
+            this.fishStick3 = new System.Windows.Forms.PictureBox();
+            this.fishStick1 = new System.Windows.Forms.PictureBox();
+            this.entity9 = new System.Windows.Forms.PictureBox();
+            this.entity8 = new System.Windows.Forms.PictureBox();
+            this.entity7 = new System.Windows.Forms.PictureBox();
+            this.entity6 = new System.Windows.Forms.PictureBox();
+            this.entity5 = new System.Windows.Forms.PictureBox();
             this.entity1 = new System.Windows.Forms.PictureBox();
             this.entity4 = new System.Windows.Forms.PictureBox();
             this.entity2 = new System.Windows.Forms.PictureBox();
             this.entity3 = new System.Windows.Forms.PictureBox();
             this.Background = new System.Windows.Forms.PictureBox();
-            this.cashUpdate = new System.Windows.Forms.Timer(this.components);
-            this.entity5 = new System.Windows.Forms.PictureBox();
-            this.entity6 = new System.Windows.Forms.PictureBox();
-            this.entity7 = new System.Windows.Forms.PictureBox();
-            this.entity8 = new System.Windows.Forms.PictureBox();
-            this.entity9 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox9 = new System.Windows.Forms.PictureBox();
             this.betOffice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.targetNumbers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity9)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity8)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity9)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).BeginInit();
             this.SuspendLayout();
             // 
             // betOffice
@@ -312,6 +312,189 @@
             this.timer1.Interval = 10;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // cashUpdate
+            // 
+            this.cashUpdate.Enabled = true;
+            this.cashUpdate.Tick += new System.EventHandler(this.cashUpdate_Tick);
+            // 
+            // fishStick9
+            // 
+            this.fishStick9.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick9.BackgroundImage")));
+            this.fishStick9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick9.Location = new System.Drawing.Point(16, 366);
+            this.fishStick9.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick9.Name = "fishStick9";
+            this.fishStick9.Size = new System.Drawing.Size(131, 28);
+            this.fishStick9.TabIndex = 19;
+            this.fishStick9.TabStop = false;
+            this.fishStick9.Visible = false;
+            // 
+            // fishStick8
+            // 
+            this.fishStick8.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick8.BackgroundImage")));
+            this.fishStick8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick8.Location = new System.Drawing.Point(16, 327);
+            this.fishStick8.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick8.Name = "fishStick8";
+            this.fishStick8.Size = new System.Drawing.Size(131, 28);
+            this.fishStick8.TabIndex = 18;
+            this.fishStick8.TabStop = false;
+            this.fishStick8.Visible = false;
+            // 
+            // fishStick7
+            // 
+            this.fishStick7.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick7.BackgroundImage")));
+            this.fishStick7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick7.Location = new System.Drawing.Point(16, 280);
+            this.fishStick7.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick7.Name = "fishStick7";
+            this.fishStick7.Size = new System.Drawing.Size(131, 28);
+            this.fishStick7.TabIndex = 17;
+            this.fishStick7.TabStop = false;
+            this.fishStick7.Visible = false;
+            // 
+            // fishStick6
+            // 
+            this.fishStick6.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick6.BackgroundImage")));
+            this.fishStick6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick6.Location = new System.Drawing.Point(16, 238);
+            this.fishStick6.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick6.Name = "fishStick6";
+            this.fishStick6.Size = new System.Drawing.Size(131, 28);
+            this.fishStick6.TabIndex = 16;
+            this.fishStick6.TabStop = false;
+            this.fishStick6.Visible = false;
+            // 
+            // fishStick5
+            // 
+            this.fishStick5.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick5.BackgroundImage")));
+            this.fishStick5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick5.Location = new System.Drawing.Point(16, 188);
+            this.fishStick5.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick5.Name = "fishStick5";
+            this.fishStick5.Size = new System.Drawing.Size(131, 28);
+            this.fishStick5.TabIndex = 15;
+            this.fishStick5.TabStop = false;
+            this.fishStick5.Visible = false;
+            // 
+            // fishStick4
+            // 
+            this.fishStick4.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick4.BackgroundImage")));
+            this.fishStick4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick4.Location = new System.Drawing.Point(16, 131);
+            this.fishStick4.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick4.Name = "fishStick4";
+            this.fishStick4.Size = new System.Drawing.Size(131, 28);
+            this.fishStick4.TabIndex = 14;
+            this.fishStick4.TabStop = false;
+            this.fishStick4.Visible = false;
+            // 
+            // fishStick2
+            // 
+            this.fishStick2.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick2.BackgroundImage")));
+            this.fishStick2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick2.Location = new System.Drawing.Point(16, 41);
+            this.fishStick2.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick2.Name = "fishStick2";
+            this.fishStick2.Size = new System.Drawing.Size(131, 28);
+            this.fishStick2.TabIndex = 13;
+            this.fishStick2.TabStop = false;
+            this.fishStick2.Visible = false;
+            // 
+            // fishStick3
+            // 
+            this.fishStick3.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick3.BackgroundImage")));
+            this.fishStick3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick3.Location = new System.Drawing.Point(16, 90);
+            this.fishStick3.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick3.Name = "fishStick3";
+            this.fishStick3.Size = new System.Drawing.Size(131, 28);
+            this.fishStick3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.fishStick3.TabIndex = 12;
+            this.fishStick3.TabStop = false;
+            this.fishStick3.Visible = false;
+            // 
+            // fishStick1
+            // 
+            this.fishStick1.BackColor = System.Drawing.Color.Transparent;
+            this.fishStick1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("fishStick1.BackgroundImage")));
+            this.fishStick1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.fishStick1.Location = new System.Drawing.Point(16, -1);
+            this.fishStick1.Margin = new System.Windows.Forms.Padding(2);
+            this.fishStick1.Name = "fishStick1";
+            this.fishStick1.Size = new System.Drawing.Size(131, 28);
+            this.fishStick1.TabIndex = 11;
+            this.fishStick1.TabStop = false;
+            this.fishStick1.Visible = false;
+            // 
+            // entity9
+            // 
+            this.entity9.BackColor = System.Drawing.Color.Transparent;
+            this.entity9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity9.BackgroundImage")));
+            this.entity9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity9.Location = new System.Drawing.Point(17, 366);
+            this.entity9.Margin = new System.Windows.Forms.Padding(2);
+            this.entity9.Name = "entity9";
+            this.entity9.Size = new System.Drawing.Size(75, 28);
+            this.entity9.TabIndex = 10;
+            this.entity9.TabStop = false;
+            // 
+            // entity8
+            // 
+            this.entity8.BackColor = System.Drawing.Color.Transparent;
+            this.entity8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity8.BackgroundImage")));
+            this.entity8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity8.Location = new System.Drawing.Point(17, 327);
+            this.entity8.Margin = new System.Windows.Forms.Padding(2);
+            this.entity8.Name = "entity8";
+            this.entity8.Size = new System.Drawing.Size(75, 28);
+            this.entity8.TabIndex = 9;
+            this.entity8.TabStop = false;
+            // 
+            // entity7
+            // 
+            this.entity7.BackColor = System.Drawing.Color.Transparent;
+            this.entity7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity7.BackgroundImage")));
+            this.entity7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity7.Location = new System.Drawing.Point(17, 280);
+            this.entity7.Margin = new System.Windows.Forms.Padding(2);
+            this.entity7.Name = "entity7";
+            this.entity7.Size = new System.Drawing.Size(75, 28);
+            this.entity7.TabIndex = 8;
+            this.entity7.TabStop = false;
+            // 
+            // entity6
+            // 
+            this.entity6.BackColor = System.Drawing.Color.Transparent;
+            this.entity6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity6.BackgroundImage")));
+            this.entity6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity6.Location = new System.Drawing.Point(17, 238);
+            this.entity6.Margin = new System.Windows.Forms.Padding(2);
+            this.entity6.Name = "entity6";
+            this.entity6.Size = new System.Drawing.Size(75, 28);
+            this.entity6.TabIndex = 7;
+            this.entity6.TabStop = false;
+            // 
+            // entity5
+            // 
+            this.entity5.BackColor = System.Drawing.Color.Transparent;
+            this.entity5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity5.BackgroundImage")));
+            this.entity5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.entity5.Location = new System.Drawing.Point(17, 188);
+            this.entity5.Margin = new System.Windows.Forms.Padding(2);
+            this.entity5.Name = "entity5";
+            this.entity5.Size = new System.Drawing.Size(75, 28);
+            this.entity5.TabIndex = 6;
+            this.entity5.TabStop = false;
+            // 
             // entity1
             // 
             this.entity1.BackColor = System.Drawing.Color.Transparent;
@@ -376,195 +559,21 @@
             this.Background.TabIndex = 0;
             this.Background.TabStop = false;
             // 
-            // cashUpdate
-            // 
-            this.cashUpdate.Enabled = true;
-            this.cashUpdate.Tick += new System.EventHandler(this.cashUpdate_Tick);
-            // 
-            // entity5
-            // 
-            this.entity5.BackColor = System.Drawing.Color.Transparent;
-            this.entity5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity5.BackgroundImage")));
-            this.entity5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity5.Location = new System.Drawing.Point(17, 188);
-            this.entity5.Margin = new System.Windows.Forms.Padding(2);
-            this.entity5.Name = "entity5";
-            this.entity5.Size = new System.Drawing.Size(75, 28);
-            this.entity5.TabIndex = 6;
-            this.entity5.TabStop = false;
-            // 
-            // entity6
-            // 
-            this.entity6.BackColor = System.Drawing.Color.Transparent;
-            this.entity6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity6.BackgroundImage")));
-            this.entity6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity6.Location = new System.Drawing.Point(17, 238);
-            this.entity6.Margin = new System.Windows.Forms.Padding(2);
-            this.entity6.Name = "entity6";
-            this.entity6.Size = new System.Drawing.Size(75, 28);
-            this.entity6.TabIndex = 7;
-            this.entity6.TabStop = false;
-            // 
-            // entity7
-            // 
-            this.entity7.BackColor = System.Drawing.Color.Transparent;
-            this.entity7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity7.BackgroundImage")));
-            this.entity7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity7.Location = new System.Drawing.Point(17, 280);
-            this.entity7.Margin = new System.Windows.Forms.Padding(2);
-            this.entity7.Name = "entity7";
-            this.entity7.Size = new System.Drawing.Size(75, 28);
-            this.entity7.TabIndex = 8;
-            this.entity7.TabStop = false;
-            // 
-            // entity8
-            // 
-            this.entity8.BackColor = System.Drawing.Color.Transparent;
-            this.entity8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity8.BackgroundImage")));
-            this.entity8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity8.Location = new System.Drawing.Point(17, 327);
-            this.entity8.Margin = new System.Windows.Forms.Padding(2);
-            this.entity8.Name = "entity8";
-            this.entity8.Size = new System.Drawing.Size(75, 28);
-            this.entity8.TabIndex = 9;
-            this.entity8.TabStop = false;
-            // 
-            // entity9
-            // 
-            this.entity9.BackColor = System.Drawing.Color.Transparent;
-            this.entity9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("entity9.BackgroundImage")));
-            this.entity9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.entity9.Location = new System.Drawing.Point(17, 366);
-            this.entity9.Margin = new System.Windows.Forms.Padding(2);
-            this.entity9.Name = "entity9";
-            this.entity9.Size = new System.Drawing.Size(75, 28);
-            this.entity9.TabIndex = 10;
-            this.entity9.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.BackgroundImage")));
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Location = new System.Drawing.Point(311, -1);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(94, 38);
-            this.pictureBox1.TabIndex = 11;
-            this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox2.BackgroundImage")));
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(311, 366);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox2.TabIndex = 19;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox3.BackgroundImage")));
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(311, 327);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox4.BackgroundImage")));
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Location = new System.Drawing.Point(311, 280);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox4.TabIndex = 17;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox5.BackgroundImage")));
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox5.Location = new System.Drawing.Point(311, 238);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox5.TabIndex = 16;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox6.BackgroundImage")));
-            this.pictureBox6.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox6.Location = new System.Drawing.Point(311, 188);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox6.TabIndex = 15;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox7
-            // 
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox7.BackgroundImage")));
-            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox7.Location = new System.Drawing.Point(311, 131);
-            this.pictureBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox7.TabIndex = 14;
-            this.pictureBox7.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox8.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox8.BackgroundImage")));
-            this.pictureBox8.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox8.Location = new System.Drawing.Point(311, 41);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox8.TabIndex = 13;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox9
-            // 
-            this.pictureBox9.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox9.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pictureBox9.BackgroundImage")));
-            this.pictureBox9.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox9.Location = new System.Drawing.Point(311, 90);
-            this.pictureBox9.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox9.Name = "pictureBox9";
-            this.pictureBox9.Size = new System.Drawing.Size(75, 28);
-            this.pictureBox9.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox9.TabIndex = 12;
-            this.pictureBox9.TabStop = false;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSeaGreen;
             this.ClientSize = new System.Drawing.Size(922, 567);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox8);
-            this.Controls.Add(this.pictureBox9);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.fishStick9);
+            this.Controls.Add(this.fishStick8);
+            this.Controls.Add(this.fishStick7);
+            this.Controls.Add(this.fishStick6);
+            this.Controls.Add(this.fishStick5);
+            this.Controls.Add(this.fishStick4);
+            this.Controls.Add(this.fishStick2);
+            this.Controls.Add(this.fishStick3);
+            this.Controls.Add(this.fishStick1);
             this.Controls.Add(this.entity9);
             this.Controls.Add(this.entity8);
             this.Controls.Add(this.entity7);
@@ -587,25 +596,25 @@
             this.betOffice.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.targetNumbers)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.fishStick1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity9)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity8)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.entity5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.entity3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Background)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.entity9)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox9)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -640,15 +649,15 @@
         private System.Windows.Forms.PictureBox entity7;
         private System.Windows.Forms.PictureBox entity8;
         private System.Windows.Forms.PictureBox entity9;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
-        private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.PictureBox pictureBox9;
+        private System.Windows.Forms.PictureBox fishStick1;
+        private System.Windows.Forms.PictureBox fishStick9;
+        private System.Windows.Forms.PictureBox fishStick8;
+        private System.Windows.Forms.PictureBox fishStick7;
+        private System.Windows.Forms.PictureBox fishStick6;
+        private System.Windows.Forms.PictureBox fishStick5;
+        private System.Windows.Forms.PictureBox fishStick4;
+        private System.Windows.Forms.PictureBox fishStick2;
+        private System.Windows.Forms.PictureBox fishStick3;
     }
 }
 
