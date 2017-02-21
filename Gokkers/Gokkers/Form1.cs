@@ -143,6 +143,8 @@ namespace Gokkers
 
         private void goBtn_Click(object sender, EventArgs e)
         {
+            winningLabel.Visible = false;
+            betLabel.Visible = false;
             timer1.Start();
             foreach (var item in contestants)
             {

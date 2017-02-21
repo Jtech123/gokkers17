@@ -59,9 +59,17 @@ namespace Gokkers
 
         public void Collect(Label betting)
         {
-            this.cash += (this.betValue * 2);
-            betting.Text = this.name + " has won " + this.betValue + " account balance " + this.cash;
-            betting.Visible = true;
+            if (this.betValue == 0)
+            {
+
+            }
+            else
+            {
+                this.cash += (this.betValue * 2);
+                betting.Text = this.name + " has won " + this.betValue + " account balance " + this.cash;
+                betting.Visible = true;
+            }
+            
         }
 
         public void UpdateMessage(TextBox[] messageBoxes)
@@ -79,7 +87,15 @@ namespace Gokkers
             Thread.Sleep(10);
             messageBoxes[1].Text = messageBoxes[0].Text;
             Thread.Sleep(10);
-            messageBoxes[0].Text = this.name + " won the bet of " + this.betValue + " on " + this.target;
+            if (this.betValue == 0)
+            {
+                
+            }
+            else
+            {
+                messageBoxes[0].Text = this.name + " won the bet of " + this.betValue + " on " + this.target;
+            }
+
         }
 
         public void SetBoxText()

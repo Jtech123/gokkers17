@@ -31,6 +31,7 @@ namespace Gokkers
                         }
                     }
                 }
+                player.SetBetValue(0);
             }
         }
     }
