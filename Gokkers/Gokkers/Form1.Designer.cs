@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.betOffice = new System.Windows.Forms.GroupBox();
+            this.resetBtn = new System.Windows.Forms.Button();
             this.betLabel = new System.Windows.Forms.Label();
             this.winningLabel = new System.Windows.Forms.Label();
             this.goBtn = new System.Windows.Forms.Button();
@@ -67,7 +68,6 @@
             this.fish2 = new System.Windows.Forms.PictureBox();
             this.fish3 = new System.Windows.Forms.PictureBox();
             this.Background = new System.Windows.Forms.PictureBox();
-            this.resetBtn = new System.Windows.Forms.Button();
             this.betOffice.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.targetNumbers)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.betAmount)).BeginInit();
@@ -121,6 +121,20 @@
             this.betOffice.TabIndex = 5;
             this.betOffice.TabStop = false;
             this.betOffice.Text = "Bet office";
+            // 
+            // resetBtn
+            // 
+            this.resetBtn.FlatAppearance.BorderSize = 0;
+            this.resetBtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
+            this.resetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.resetBtn.Location = new System.Drawing.Point(1025, 161);
+            this.resetBtn.Name = "resetBtn";
+            this.resetBtn.Size = new System.Drawing.Size(85, 36);
+            this.resetBtn.TabIndex = 13;
+            this.resetBtn.Text = "Reset";
+            this.resetBtn.UseVisualStyleBackColor = true;
+            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // betLabel
             // 
@@ -547,7 +561,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Background.BackColor = System.Drawing.Color.Transparent;
-            this.Background.BackgroundImage = global::Gokkers.Properties.Resources.sea_background;
+            this.Background.BackgroundImage = global::Gokkers.Properties.Resources.sea_background1;
             this.Background.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Background.Location = new System.Drawing.Point(1, -1);
             this.Background.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -555,20 +569,6 @@
             this.Background.Size = new System.Drawing.Size(1224, 486);
             this.Background.TabIndex = 0;
             this.Background.TabStop = false;
-            // 
-            // resetBtn
-            // 
-            this.resetBtn.FlatAppearance.BorderSize = 0;
-            this.resetBtn.FlatAppearance.MouseDownBackColor = System.Drawing.SystemColors.Highlight;
-            this.resetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.resetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.resetBtn.Location = new System.Drawing.Point(1025, 161);
-            this.resetBtn.Name = "resetBtn";
-            this.resetBtn.Size = new System.Drawing.Size(85, 36);
-            this.resetBtn.TabIndex = 13;
-            this.resetBtn.Text = "Reset";
-            this.resetBtn.UseVisualStyleBackColor = true;
-            this.resetBtn.Click += new System.EventHandler(this.resetBtn_Click);
             // 
             // Form1
             // 
