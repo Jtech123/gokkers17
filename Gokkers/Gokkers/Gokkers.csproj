@@ -90,6 +90,7 @@
   <ItemGroup>
     <Content Include="assets\png\Dog.png" />
     <Content Include="assets\png\fish.png" />
+    <None Include="assets\wav\BennyHill.wav" />
     <None Include="assets\png\fisstick.png" />
     <None Include="assets\png\sea_background.jpg" />
   </ItemGroup>
