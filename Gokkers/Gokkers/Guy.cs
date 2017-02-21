@@ -19,7 +19,7 @@ namespace Gokkers
 
         public Guy(string name, RadioButton playerItem)
         {
-            this.cash = 50;
+            this.cash = 100;
             this.name = name;
             this.playerItem = playerItem;
         }

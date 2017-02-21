@@ -229,7 +229,21 @@ namespace Gokkers
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
-            //Reset code here!!!
+            foreach (var item in fishsticks)
+            {
+                item.Visible = false;
+            }
+            foreach (var item in contestants)
+            {
+                item.SetHasLost(false);
+                item.TakeStartingPosition();
+                
+            }
+            foreach (var item in players)
+            {
+                item.SetCash(100);
+            }
+
         }
     }
 }
