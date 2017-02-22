@@ -28,3 +28,5 @@ C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.cspr
 C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Form1.resources
 C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Properties.Resources.resources
 C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csproj.GenerateResource.Cache
+C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\wav\benny2.wav
+C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\wav\BennyHill.wav

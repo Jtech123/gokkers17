@@ -90,9 +90,15 @@
   <ItemGroup>
     <Content Include="assets\png\Dog.png" />
     <Content Include="assets\png\fish.png" />
-    <None Include="assets\wav\benny2.wav" />
-    <None Include="assets\wav\BennyHill.wav" />
-    <None Include="assets\png\fisstick.png" />
+    <Content Include="assets\wav\benny2.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="assets\wav\BennyHill.wav">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Compile Include="assets\png\fisstick.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Compile>
     <None Include="assets\png\sea_background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

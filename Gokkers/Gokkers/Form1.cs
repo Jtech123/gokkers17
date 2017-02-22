@@ -50,12 +50,15 @@ namespace Gokkers
         {
             
 
-            string fileName = @"mp3\BennyHill.mp3";
+            string fileName = @"wav\BennyHill.wav";
             string path = Path.Combine(Environment.CurrentDirectory, @"assets\", fileName);
 
-            //SoundPlayer player = new SoundPlayer();
-            //player.SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\yourmusic.wav";
-            //player.Play();
+            new SoundPlayer(
+                (System.IO.MemoryStream)Gokkers.Properties.Resources.ResourceManager.GetObject("BennyHill")
+            );
+            SoundPlayer player = new SoundPlayer();
+            player.SoundLocation = path;
+            player.Play();
 
             entitys[0] = fish1;
             entitys[1] = fish2;
