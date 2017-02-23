@@ -96,9 +96,9 @@
     <Content Include="assets\wav\BennyHill.wav">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Compile Include="assets\png\fisstick.png">
+    <Content Include="assets\png\fisstick.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Compile>
+    </Content>
     <None Include="assets\png\sea_background.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

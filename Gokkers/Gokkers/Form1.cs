@@ -53,9 +53,9 @@ namespace Gokkers
             string fileName = @"wav\BennyHill.wav";
             string path = Path.Combine(Environment.CurrentDirectory, @"assets\", fileName);
 
-            new SoundPlayer(
-                (System.IO.MemoryStream)Gokkers.Properties.Resources.ResourceManager.GetObject("BennyHill")
-            );
+            //new SoundPlayer(
+                //(System.IO.MemoryStream)Gokkers.Properties.Resources.ResourceManager.GetObject("BennyHill")
+            //);
             SoundPlayer player = new SoundPlayer();
             player.SoundLocation = path;
             player.Play();
