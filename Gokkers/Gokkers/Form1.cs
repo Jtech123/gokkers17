@@ -86,13 +86,13 @@ namespace Gokkers
             messageBoxes[2] = topMessage;
             CreateEntity();
             CreatePlayers();
-            foreach (var entity in entitys)
+            foreach (PictureBox entity in entitys)
             {
                 Background.Controls.Add(entity);
                 entity.Location = new Point(entity.Location.X, entity.Location.Y);
                 entity.BackColor = Color.Transparent;
             }
-            foreach (var fishstick in fishsticks)
+            foreach (PictureBox fishstick in fishsticks)
             {
                 Background.Controls.Add(fishstick);
                 fishstick.Location = new Point(fishstick.Location.X, fishstick.Location.Y);
@@ -102,14 +102,14 @@ namespace Gokkers
 
         private void gameTimer_Tick(object sender, EventArgs e)
         {
-            foreach (var item in contestants)
+            foreach (Fish contestant in contestants)
             {
-                if (item == null)
+                if (contestant == null)
                 {
 
                 }
                 else {
-                    bool result = item.Run(winningLabel);
+                    bool result = contestant.Run(winningLabel);
                     if (result)
                     {
                         bet.CheckWinner(players, contestants, betLabel, messageBoxes);
@@ -149,7 +149,7 @@ namespace Gokkers
                     }
                     else
                     {
-                        item.Run(winningLabel);
+                        contestant.Run(winningLabel);
                     }
                 }
             }
@@ -160,15 +160,15 @@ namespace Gokkers
             winningLabel.Visible = false;
             betLabel.Visible = false;
             gameTimer.Start();
-            foreach (var item in contestants)
+            foreach (Fish contestant in contestants)
             {
-                if (item == null)
+                if (contestant == null)
                 {
 
                 }
                 else
                 {
-                    item.TakeStartingPosition();
+                    contestant.TakeStartingPosition();
                 }
                 
             }
@@ -219,7 +219,7 @@ namespace Gokkers
 
         private void cashUpdate_Tick(object sender, EventArgs e)
         {
-            foreach (var player in players)
+            foreach (Guy player in players)
             {
                 player.SetBoxText();
             }
@@ -243,19 +243,19 @@ namespace Gokkers
 
         private void resetBtn_Click(object sender, EventArgs e)
         {
-            foreach (var item in fishsticks)
+            foreach (PictureBox fishstick in fishsticks)
             {
-                item.Visible = false;
+                fishstick.Visible = false;
             }
-            foreach (var item in contestants)
+            foreach (Fish contestant in contestants)
             {
-                item.SetHasLost(false);
-                item.TakeStartingPosition();
+                contestant.SetHasLost(false);
+                contestant.TakeStartingPosition();
                 
             }
-            foreach (var item in players)
+            foreach (Guy player in players)
             {
-                item.SetCash(100);
+                player.SetCash(100);
             }
 
         }

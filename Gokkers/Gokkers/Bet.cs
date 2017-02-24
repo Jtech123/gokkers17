@@ -11,9 +11,9 @@ namespace Gokkers
     {
         public void CheckWinner(Guy[] players, Fish[] entitys, Label betting, TextBox[] messageBoxes)
         {
-            foreach(var player in players)
+            foreach(Guy player in players)
             {
-                foreach (var entity in entitys)
+                foreach (Fish entity in entitys)
                 {
                     if (entity == null)
                     {
