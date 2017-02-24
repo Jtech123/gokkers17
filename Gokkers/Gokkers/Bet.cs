@@ -20,7 +20,7 @@ namespace Gokkers
 
                     }
                     else {
-                        if (("entity" + player.GetTarget().ToString()) == entity.GetName() && (entity.GetPosX() >= entity.RaceTrackLength && !entity.GetHasLost()))
+                        if (("fish" + player.GetTarget().ToString()) == entity.GetName() && (entity.GetPosX() >= entity.RaceTrackLength && !entity.GetHasLost()))
                         {
                             player.Collect(betting);
                             player.ShowWinnerMessage(messageBoxes);
