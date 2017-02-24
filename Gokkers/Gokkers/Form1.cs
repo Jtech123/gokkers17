@@ -58,7 +58,7 @@ namespace Gokkers
             //);
             SoundPlayer player = new SoundPlayer();
             player.SoundLocation = path;
-            player.Play();
+            player.PlayLooping();
 
             entitys[0] = fish1;
             entitys[1] = fish2;

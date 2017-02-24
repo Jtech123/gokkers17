@@ -31,3 +31,12 @@ C:\Users\miked\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.cspr
 C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\wav\benny2.wav
 C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\wav\BennyHill.wav
 C:\Users\D181761\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\png\fisstick.png
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\wav\benny2.wav
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\wav\BennyHill.wav
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\assets\png\fisstick.png
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.exe
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\bin\Debug\Gokkers.pdb
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csprojResolveAssemblyReference.cache
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Form1.resources
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.Properties.Resources.resources
+C:\Users\jurri\Documents\GitHub\gokkers17\Gokkers\Gokkers\obj\Debug\Gokkers.csproj.GenerateResource.Cache
