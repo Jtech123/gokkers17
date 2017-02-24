@@ -222,7 +222,6 @@ namespace Gokkers
             foreach (var player in players)
             {
                 player.SetBoxText();
-                
             }
             for (int i = 0; i < playerBoxes.Length; i++)
             {
@@ -237,6 +236,7 @@ namespace Gokkers
                     {
                         betAmount.Maximum = players[i].ChangeMaxBet();
                     }
+                    betterLabel.Text = players[i].GetName();
                 }
             }
         }
